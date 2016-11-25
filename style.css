@@ -64,7 +64,7 @@ nav{
 }
 
 #menu-icon {
-	display: hidden;
+	display: none;
 	width: 40px;
 	height: 40px;
 	background: url(img/nav.png) center;
@@ -211,10 +211,20 @@ footer {
 		background-color: #ffffff;
 		left: 0px;
 		top: 70px;
+		width: 100%;
+	}
+
+	nav ul li {
+		padding-right: 7.5%;
 	}
 
 	nav:hover ul{
 		display: block;
+		padding-right: 30px;
+	}
+
+	#menu-icon {
+		color: #F06D6D;
 	}
 
 	#overview, #times, #heart, #community{
