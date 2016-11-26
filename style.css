@@ -6,7 +6,7 @@
 	padding: 0;
 	border: 0;
 	font-family: 'Alegreya Sans', sans-serif;
-	
+
 }
 /* end reset style */
 
@@ -67,7 +67,6 @@ nav {
 	display: none;
 	width: 40px;
 	height: 40px;
-	background: url(img/nav.png) center;
 }
 
 a:hover #menu-icon {
@@ -108,6 +107,10 @@ nav ul li a:hover {
 }
 
 #inner-wrapper2 {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
 	float: left;
 	width: 100%;
 	background-color: #F16D6B;
@@ -245,7 +248,7 @@ footer {
 		float: left;
 		width: 50%;
 		min-height: 200px;
-	
+
 	}
 
 	#times ul p {
@@ -270,13 +273,3 @@ footer {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
