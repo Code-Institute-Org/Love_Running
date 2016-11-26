@@ -2,9 +2,9 @@
 
 /* reset style */
 * {
-	margin:0;
-	padding:0;
-	border:0;
+	margin: 0;
+	padding: 0;
+	border: 0;
 	font-family: 'Alegreya Sans', sans-serif;
 	
 }
@@ -38,18 +38,18 @@ img {
 	margin-bottom: -4px;
 }
 
-header{
+header {
 	width: 100%;
 	height: 86px;
 }
 
-#header-inner{
+#header-inner {
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
 #logo {
-	float:left;
+	float: left;
 	width: 70px;
 	height: 60px;
 	padding-top: 20px;
@@ -58,8 +58,8 @@ header{
 
 /*------- Start Navigation--------*/
 
-nav{
-	float:right;
+nav {
+	float: right;
 	padding: 25px 20px 0 0;
 }
 
@@ -70,13 +70,13 @@ nav{
 	background: url(img/nav.png) center;
 }
 
-a:hover #menu-icon{
+a:hover #menu-icon {
 	border-radius: 4px 4px 0 0;
 }
 
-ul{
-	list-style-type:none;
-	display:inline-block;
+ul {
+	list-style-type: none;
+	display: inline-block;
 	font-size: 120%;
 }
 
@@ -84,7 +84,7 @@ ul{
 nav ul li {
 	font-family: 'Alegreya Sans', sans-serif;
 	display: inline-block;
-	float:left;
+	float: left;
 	padding: 10px;
 }
 
@@ -107,7 +107,7 @@ nav ul li a:hover {
 	background-color: #ffffff;
 }
 
-#inner-wrapper2{
+#inner-wrapper2 {
 	float: left;
 	width: 100%;
 	background-color: #F16D6B;
@@ -129,8 +129,8 @@ nav ul li a:hover {
 	color: #F16D6B;
 }
 
-#overview{
-	float:left;
+#overview {
+	float: left;
 	width: 50%;
 }
 
@@ -138,24 +138,25 @@ nav ul li a:hover {
 	font-size: 700%;
 	text-align: center;
 	min-height: 200px;
-	float:right;
+	float: right;
 	margin: 0 auto;
 	width: 50%;
 	padding-top: 20px;
 }
 
-#community i{
+#community i {
 	padding-top: 30px;
 	color: #ffffff;
 }
 
-#times{
-	float:right;
+#times {
+	float: right;
 	width: 50%;
 	min-height: 200px;
 	color: #ffffff;
 }
-#times ul p{
+
+#times ul p {
  font-size: 100%;
  color: #ffffff;
  padding: 3px;
@@ -165,14 +166,14 @@ footer {
 	width: 100%;
 }
 
-.social_networks{
+.social_network s{
 	list-style-type: none;
 	text-align: center;
 	width: 100%;
 
 }
 
-.social_networks li{
+.social_networks li {
 	display: inline;
 }
 
@@ -187,19 +188,19 @@ footer {
 
 @media screen  and (max-width: 768px) {
 
-	h2{
+	h2 {
 		font-size: 150%;
 	}
 
-	h3{
+	h3 {
 		font-size: 125%;
 	}
 
-	p{
+	p {
 		font-size: 100%;
 	}
 
-	#menu-icon{
+	#menu-icon {
 		display: inline-block;
 	}
 
@@ -218,7 +219,7 @@ footer {
 		padding-right: 7.5%;
 	}
 
-	nav:hover ul{
+	nav:hover ul {
 		display: block;
 		padding-right: 30px;
 	}
@@ -227,7 +228,7 @@ footer {
 		color: #F06D6D;
 	}
 
-	#overview, #times, #heart, #community{
+	#overview, #times, #heart, #community {
 		width: 100%;
 	}
 
@@ -240,30 +241,29 @@ footer {
 		padding: 15px;
 	}
 
-	#times{
-		float:left;
+	#times {
+		float: left;
 		width: 50%;
 		min-height: 200px;
 	
 	}
 
-	#times ul p{
-	 font-size: 70%;
+	#times ul p {
+		font-size: 70%;
 	}
 
 	#community {
 		font-size: 400%;
 		text-align: center;
 		min-height: 200px;
-		float:right;
+		float: right;
 		margin: 0 auto;
 		width: 50%;
 	}
 
-	#community i{
-	padding-top: 20px;
+	#community i {
+		padding-top: 20px;
 	}
-
 
 	.social_networks i {
 		font-size: 100%;
