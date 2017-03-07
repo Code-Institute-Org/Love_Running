@@ -1,9 +1,9 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Love Running</title>
-	<link rel="stylesheet" type="text/css" href="style.css" />	
+	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 </head>
@@ -41,13 +41,42 @@
 	</section>
 	<section id="inner-wrapper2">
 		<aside id="times">
-			<h2>MEETS &amp; RUNS </h2>
-			<ul>
-				<li><p><i class="fa fa-building-o">&nbsp;&nbsp;</i>Mon  6:30pm: 5k Run - The Marker Hotel</p></li>
-				<li><p><i class="fa fa-building-o">&nbsp;&nbsp;</i>Wed  6:30pm: 5k 	  Run - The Marker Hotel</p></li>
-				<li><p><i class="fa fa-building-o">&nbsp;&nbsp;</i>Thur 6:30pm: 5k 	  Run - The Marker Hotel</p></li>
-				<li><p><i class="fa fa-tree">&nbsp;&nbsp;</i>Sat  9am:   10k    Run - Phoenix Park</p></li>
-				<li><p><i class="fa fa-coffee">&nbsp;&nbsp;</i>Sun 10am: Community Meetup - The Marker Hotel</p></li>
+			<h2>MEETS &amp; RUNS</h2>
+			<ul id="times-filters">
+				<li onclick="showEventTimes('run5k')">
+					<i class="fa fa-fw fa-building-o"></i>
+					5K Runs
+				</li>
+				<li onclick="showEventTimes('run10k')">
+					<i class="fa fa-fw fa-tree"></i>
+					10K Runs
+				</li>
+				<li onclick="showEventTimes('meetup')">
+					<i class="fa fa-fw fa-coffee"></i>
+					Meetups
+				</li>
+			</ul>
+			<ul id="times-list">
+				<li class="run5k hidden">
+					<i class="fa fa-fw fa-building-o"></i>
+					Mon 6:30pm: 5k Run - The Marker Hotel
+				</li>
+				<li class="run5k hidden">
+					<i class="fa fa-fw fa-building-o"></i>
+					Wed 6:30pm: 5k Run - The Marker Hotel
+				</li>
+				<li class="run5k hidden">
+					<i class="fa fa-fw fa-building-o"></i>
+					Thur 6:30pm: 5k Run - The Marker Hotel
+				</li>
+				<li class="run10k hidden">
+					<i class="fa fa-fw fa-tree"></i>
+					Sat 9am: 10k Run - Phoenix Park
+				</li>
+				<li class="meetup hidden">
+					<i class="fa fa-fw fa-coffee"></i>
+					Sun 10am: Community Meetup - The Marker Hotel
+				</li>
 			</ul>
 		</aside>
 		<article id="community">
@@ -65,5 +94,18 @@
 		</ul>
 	</footer>
 	<!-- End Footer -->
+	<script>
+		function showEventTimes(type) {
+			// First, hide all event times:
+			document.querySelectorAll('#times-list li').forEach(function(element) {
+				element.classList.add('hidden');
+			});
+
+			// Then, display (un-hide) just the selected type of event:
+			document.querySelectorAll('#times-list .'+type).forEach(function(element) {
+				element.classList.remove('hidden');
+			});
+		}
+	</script>
 </body>
 </html>
