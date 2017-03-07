@@ -14,7 +14,7 @@ body {
 	color: #6991AC;
 }
 
-h2{
+h2 {
 	font-size: 200%;
 	font-weight: 700;
 	text-align: center;
@@ -75,7 +75,6 @@ a:hover #menu-icon {
 
 ul {
 	list-style-type: none;
-	display: inline-block;
 	font-size: 120%;
 }
 
@@ -149,6 +148,7 @@ nav ul li a:hover {
 
 #community i {
 	padding-top: 30px;
+	padding-right: 10px;
 	color: #ffffff;
 }
 
@@ -159,10 +159,40 @@ nav ul li a:hover {
 	color: #ffffff;
 }
 
-#times ul p {
- font-size: 100%;
- color: #ffffff;
- padding: 3px;
+#times h2 {
+	text-align: left;
+	margin-left: 5px;
+}
+
+#times ul {
+	clear: both;
+}
+
+#times li {
+	font-size: 100%;
+	color: #ffffff;
+	padding: 3px;
+}
+
+#times-filters {
+	margin-bottom: 50px;
+}
+
+#times-filters li {
+	float: left;
+	background-color: #FF9A97;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+#times-filters li:hover {
+	background-color: #ad2622;
+}
+
+.hidden {
+	display: none;
 }
 
 footer {
